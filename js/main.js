@@ -1,8 +1,7 @@
-//Calculadora de divisas
-
 let continuar = true;
 
-while (continuar) {
+//Calculadora de divisas
+function resultado() {
   let resultado = 1;
 
   let question = prompt(`
@@ -62,7 +61,12 @@ while (continuar) {
     default:
       alert("Opción no válida");
   }
+}
 
+while (continuar) {
+  
+  resultado();
+  
   let opcionContinuar = prompt("¿Desea realizar otra conversión? (Sí/No)");
   continuar = (opcionContinuar === "si" || opcionContinuar === "sí" || opcionContinuar === "Si" || opcionContinuar === "Sí");
 }
